@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "485028582881",
+    "project_id": "example-cooking-flutter",
+    "storage_bucket": "example-cooking-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485028582881:android:d4ca9dffdd0faa9e57aea0",
+        "android_client_info": {
+          "package_name": "com.example.newflutterproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485028582881-7c1o3pr4ra8i9504k4uo3qob7tc4skl4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZeXVQcmHpQpAlWQclWdCDglcc7bRbEHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485028582881-7c1o3pr4ra8i9504k4uo3qob7tc4skl4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
