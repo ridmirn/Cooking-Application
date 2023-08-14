@@ -80,8 +80,7 @@ final String thumbnailUrl;
           ),
 
         ],
-      )
-    
+      ),
     );
   }
 }

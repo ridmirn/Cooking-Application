@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+//import 'package:newflutterproject/models/Food_items.dart';
+import 'package:newflutterproject/screens/recipe_detail_screen.dart';
 import 'package:newflutterproject/widgets/recipe_card.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 //import 'package:newflutterproject/assests';
@@ -10,6 +12,7 @@ class HomePage extends StatefulWidget{
 }
 
 class _HomePageState extends State <HomePage> {
+   //List<dynamic> ingridents = [];
   @override
   Widget build (BuildContext context) {
     return Scaffold(
@@ -32,15 +35,28 @@ class _HomePageState extends State <HomePage> {
             );
           }
 
+          // List<dynamic> ingridents = [];
+          //   snapshot.data!.docs.forEach((doc) {
+          //   if (doc.exists) {
+            
+          //     (doc['ingridents'].toString());
+          //   }
+          // });
           return ListView(
             children: snapshot.data!.docs.map((doc){
-              return RecipeCard(
-                  title:(doc['foodname'].toString()),
-                  thumbnailUrl:(doc['image']),
-                
+              return GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => RecipeDetails(doc['foodname'].toString(),doc['image'], doc['servings'], doc['ingridents'].cast<String>(), doc['steps'].cast<String>())));
+                },
+
+                child: RecipeCard(
+                    title:(doc['foodname'].toString()),
+                    thumbnailUrl:(doc['image']),
+                ),
               );
             }).toList(),
-
+            
+        
           );
         },
     ),
