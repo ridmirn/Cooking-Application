@@ -6,15 +6,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../widgets/button.dart';
 
-//import '../models/Food_items.dart';
 
 class RecipeDetails extends StatelessWidget {
 
 final String title;
 final String image;
 final String servings;
-//List<String> ingridents = [];
-//final String ingridents;
 final List<String> ingridents;
 final List<String> steps;
 
@@ -132,8 +129,8 @@ RecipeDetails(this.title, this.image, this.servings, this.ingridents, this.steps
                               return ListTile(
                                 title: Text(ingridents[index],
                                 style: TextStyle(
-                                  color: Colors.green,
-                                  fontSize: 16,
+                                  color: Colors.black,
+                                  fontSize: 14,
                                 ),),
                               );
                             },
@@ -145,8 +142,8 @@ RecipeDetails(this.title, this.image, this.servings, this.ingridents, this.steps
                                 return ListTile(
                                   title: Text(steps[index],
                                   style: TextStyle(
-                                    color: Colors.red,
-                                    fontSize: 16,
+                                    color: Colors.black,
+                                    fontSize: 14,
                                   ),),
                                 );
                               },
@@ -185,86 +182,3 @@ RecipeDetails(this.title, this.image, this.servings, this.ingridents, this.steps
   }
 }
 
-// class Ingridents extends StatefulWidget{
-//   @override
-//   _Ingridents createState() => _Ingridents();
-// }
-
-// class _Ingridents extends State <Ingridents> {
-//   List<dynamic> ingridents = [];
-
-//   @override 
-//   void initState(){
-//     super.initState();
-//     fetchDataFromFirebase();
-//   }
-
-//   Future<void> fetchDataFromFirebase() async {
-//     QuerySnapshot querySnapshot = await FirebaseFirestore.instance
-//     .collection('Food_items')
-//     .get();
-
-//     if (querySnapshot.docs.isNotEmpty){
-//       ingridents = querySnapshot.docs[0]['ingridents'];
-//     }
-
-//     // for (QueryDocumentSnapshot docSnapshot in querySnapshot.docs) {
-//     //   if (docSnapshot.exists){
-//     //     ingridents.addAll(docSnapshot['ingridents']);
-//     //   }
-//     // }
-//     setState(() {});
-//   }
-
-//   @override
-//   Widget build(BuildContext context){
-//     return SingleChildScrollView(
-//       child: Column(
-//         children: [
-//           ListView.separated(
-//             shrinkWrap: true,
-//             itemCount: ingridents.length,
-//             separatorBuilder: (BuildContext context, int index){
-//               return Divider(
-//                 color: Colors.black.withOpacity(0.3),
-//               );
-//             },
-//             itemBuilder: (BuildContext context, int index){
-//               return Text(ingridents[index]);
-//             },
-//           )
-          
-//         ],
-//       ),
-//     );
-//   }
-// }
-// class Ingridents extends StatelessWidget {
-// final String ingridents;
-// Ingridents({
-//   required this.ingridents,
-// });
-
-// @override
-// Widget build(BuildContext context){
-//   return SingleChildScrollView(
-//    child: Column(
-//       children: [
-//         ListView.separated(
-//           shrinkWrap: true,
-//           itemCount: ingridents.length,
-//           separatorBuilder: (BuildContext context, int index){
-//             return Divider(
-//               color: Colors.black.withOpacity(0.3),
-//             );
-//           },
-//           itemBuilder: (BuildContext context, int index){
-//             return Text(ingridents[index]);
-//           },
-//         )
-//       ]),
-//   );
-  
-// }
-
-// }
