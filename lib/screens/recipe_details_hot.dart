@@ -2,22 +2,21 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:newflutterproject/screens/example.dart';
-//import 'package:newflutterproject/screens/sensor_data.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 
 
 
-class RecipeDetails extends StatelessWidget {
+class RecipeDetailsHot extends StatelessWidget {
 
 
 final String image;
 final String foodname;
 final String servings;
-final List<String> medium;
+final List<String> hot;
 final List<String> steps;
-RecipeDetails(this.image, this.foodname, this.servings, this.medium, this.steps);
+RecipeDetailsHot(this.image, this.foodname, this.servings, this.hot, this.steps);
  
   
   @override
@@ -95,7 +94,7 @@ RecipeDetails(this.image, this.foodname, this.servings, this.medium, this.steps)
                      ),
                   ),
                  MaterialButton(
-                   onPressed: () => Navigator.push(context,
+                    onPressed: () => Navigator.push(context,
                   MaterialPageRoute(builder: (context) => SensorDataScreen(foodname))),
                    child: Container(       
                   height: 40,
@@ -118,15 +117,7 @@ RecipeDetails(this.image, this.foodname, this.servings, this.medium, this.steps)
 
                 ],
               ),
-              //  SizedBox(
-              //   height: 30,
-              // ),
-              //  Text(foodname,
-              //  style: _textTheme.titleMedium,
-              //  ),
-              //   SizedBox(
-              //   height: 5,
-              // ),
+          
                Text( servings + " Serving",
                      style: TextStyle(
                       color: Colors.black.withOpacity(0.5),
@@ -134,11 +125,6 @@ RecipeDetails(this.image, this.foodname, this.servings, this.medium, this.steps)
                       fontSize: 14,
             )
                ),
-              //  SizedBox(
-              //   height: 10,
-              //  ),
-        
-
               
                Divider(
                 color: Colors.black.withOpacity(0.3),
@@ -170,10 +156,10 @@ RecipeDetails(this.image, this.foodname, this.servings, this.medium, this.steps)
                         children: [
                           //Ingridents(ingridents: ingridents),
                            ListView.builder(
-                            itemCount: medium.length,
+                            itemCount: hot.length,
                             itemBuilder: (context, index) {
                               return ListTile(
-                                title: Text(medium[index],
+                                title: Text(hot[index],
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 14,

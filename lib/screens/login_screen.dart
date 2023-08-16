@@ -4,6 +4,7 @@ import 'package:newflutterproject/screens/forgot_password.dart';
 import 'package:newflutterproject/screens/new_screen.dart';
 import 'package:newflutterproject/screens/recipe_detail_screen.dart';
 import 'package:newflutterproject/screens/register_screen.dart';
+import 'package:newflutterproject/screens/spiciness_level.dart';
 import 'package:newflutterproject/services/firebase_auth_service.dart';
 import 'package:newflutterproject/widgets/customized_textfields.dart';
 

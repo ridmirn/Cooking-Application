@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:newflutterproject/firebase_options.dart';
 import 'package:newflutterproject/screens/new_screen.dart';
 import 'package:newflutterproject/screens/recipe_detail_screen.dart';
+import 'package:newflutterproject/screens/spiciness_level.dart';
 import 'package:newflutterproject/screens/welcome_screen.dart';
 //import 'package:provider/provider.dart';
 //import 'firebase_options.dart';
@@ -91,10 +92,11 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
+      
         // TRY THIS: Try changing the color here to a specific color (to
         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
         // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),

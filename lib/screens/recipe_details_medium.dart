@@ -2,22 +2,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:newflutterproject/screens/example.dart';
-//import 'package:newflutterproject/screens/sensor_data.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 
 
 
-class RecipeDetails extends StatelessWidget {
-
-
+class RecipeDetailsMedium extends StatelessWidget {
 final String image;
 final String foodname;
 final String servings;
-final List<String> medium;
+final List<String> mild;
 final List<String> steps;
-RecipeDetails(this.image, this.foodname, this.servings, this.medium, this.steps);
+RecipeDetailsMedium (this.image, this.foodname, this.servings, this.mild, this.steps);
  
   
   @override
@@ -95,7 +92,7 @@ RecipeDetails(this.image, this.foodname, this.servings, this.medium, this.steps)
                      ),
                   ),
                  MaterialButton(
-                   onPressed: () => Navigator.push(context,
+                     onPressed: () => Navigator.push(context,
                   MaterialPageRoute(builder: (context) => SensorDataScreen(foodname))),
                    child: Container(       
                   height: 40,
@@ -170,10 +167,10 @@ RecipeDetails(this.image, this.foodname, this.servings, this.medium, this.steps)
                         children: [
                           //Ingridents(ingridents: ingridents),
                            ListView.builder(
-                            itemCount: medium.length,
+                            itemCount: mild.length,
                             itemBuilder: (context, index) {
                               return ListTile(
-                                title: Text(medium[index],
+                                title: Text(mild[index],
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 14,
