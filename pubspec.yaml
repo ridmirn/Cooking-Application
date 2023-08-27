@@ -46,6 +46,7 @@ dependencies:
   sliding_up_panel: ^2.0.0+1
   json_annotation: ^4.8.1
   google_fonts: ^5.1.0
+  firebase_database: ^10.2.5
  
 
 dev_dependencies:

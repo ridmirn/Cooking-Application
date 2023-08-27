@@ -1,16 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:newflutterproject/screens/example.dart';
-//import 'package:newflutterproject/screens/sensor_data.dart';
+import 'package:newflutterproject/screens/sensor_data.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-
-
-
 class RecipeDetails extends StatelessWidget {
-
 
 final String image;
 final String foodname;
@@ -137,9 +132,6 @@ RecipeDetails(this.image, this.foodname, this.servings, this.medium, this.steps)
               //  SizedBox(
               //   height: 10,
               //  ),
-        
-
-              
                Divider(
                 color: Colors.black.withOpacity(0.3),
                ),
