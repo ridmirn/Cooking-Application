@@ -14,6 +14,7 @@ class SensorDataScreen extends StatefulWidget{
     String _display = '';
     String  _displaytemp ='';
     String _displaysalt = '';
+    bool On = false;
     final _database = FirebaseDatabase.instance.ref();
 
     @override
@@ -25,34 +26,26 @@ class SensorDataScreen extends StatefulWidget{
     void _activateListeners(){
       _database.child('sensordata/MLX/obj').onValue.listen((event) {
         final Object? obj = event.snapshot.value;
-        setState(() {
+       if(mounted) setState(() {
           _display = '$obj';
         });
       });
 
            _database.child('sensordata/MLX/Temp').onValue.listen((event) {
         final Object? Temp = event.snapshot.value;
-        setState(() {
+      if(mounted)  setState(() {
           _displaytemp = '$Temp';
         });
       });
 
              _database.child('sensordata/TDS/level').onValue.listen((event) {
         final Object? level = event.snapshot.value;
-        setState(() {
+       if(mounted) setState(() {
           _displaysalt = '$level';
         });
       });
 
     }
-     
-
-  
-    // SensorDataScreen(this.foodname);
-  //final ref = FirebaseDatabase.instance.ref('Sensordata');
- 
-
-//final DatabaseReference _databaseReference = FirebaseDatabase.instance.ref();
   
 @override
 Widget build(BuildContext context){
@@ -166,7 +159,7 @@ Widget build(BuildContext context){
             Positioned(
         top: 260,
         left: 40,
-        child: Text(_displaytemp + '*C',
+        child: Text(_displaytemp + ' °C',
          textAlign: TextAlign.left, 
          style: TextStyle(
         color: Colors.black.withOpacity(0.5),
@@ -232,15 +225,22 @@ Widget build(BuildContext context){
                   borderRadius: BorderRadius.circular(10)
                 ),
                 child: Center(
-                  child: Text("Stop Buzzer",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                   fontFamily: GoogleFonts.amaranth().fontFamily,
-                  ),
-                  ),
+                  
+                  child: On? Text("Cooking") : Text("Ready"),
+                  // style: TextStyle(
+                  //   color: Colors.white,
+                  //   fontSize: 18,
+                  //  fontFamily: GoogleFonts.amaranth().fontFamily,
+                  // ),
                 ),
               ),
+              onTap: () {
+               if(mounted) setState(() {
+                  _database.child('sensordata/buzzer').set({"Switch": !On});
+                  On = !On;
+                });
+              },
+              
             )
       ),  
         ],
