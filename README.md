@@ -4,13 +4,17 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a cooking application that includes Real-time monitoring of the readiness of the dish and customizing the recipe according to the spiciness level of the user.
+The purpose of this project is to 
+## Project Includes
+1. IoT Device
+2. Mobile Application.
 
-A few resources to get you started if this is your first Flutter project:
+## Used Technologies
+1. Arduino for the development of the hardware device
+2. Flutter for the development of the mobile application
+3. Firebase as the backend and hosting of the mobile application.
+   
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
