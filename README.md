@@ -20,7 +20,8 @@ The purpose of this project is to enable people with taste and smell disabilitie
 
 ![image](https://github.com/ridmirn/cooking-app/assets/105937420/059cab70-526b-423f-8247-4af4c915c853)           ![image](https://github.com/ridmirn/cooking-app/assets/105937420/c911756f-8a89-4821-ba4d-54fc6503c74d)
 
-![image](https://github.com/ridmirn/cooking-app/assets/105937420/d34b0767-8b37-462e-8419-cd6f21e563fd)
+![image](https://github.com/ridmirn/cooking-app/assets/105937420/d34b0767-8b37-462e-8419-cd6f21e563fd)           ![image](https://github.com/ridmirn/cooking-app/assets/105937420/5c3b3d13-30d1-48fc-9422-35723764c6f7)
+
 
 
 
