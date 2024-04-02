@@ -16,7 +16,7 @@ The purpose of this project is to enable people with taste and smell disabilitie
 2. Flutter for the development of the mobile application
 3. Firebase as the backend and hosting of the mobile application.
 
-## UI Designs.
+## UI Designs
 
 ![image](https://github.com/ridmirn/cooking-app/assets/105937420/059cab70-526b-423f-8247-4af4c915c853)           ![image](https://github.com/ridmirn/cooking-app/assets/105937420/c911756f-8a89-4821-ba4d-54fc6503c74d)
 
