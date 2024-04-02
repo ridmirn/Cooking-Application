@@ -1,7 +1,5 @@
 # Cooking Application for Smell and Taste Disability People
 
-A new Flutter project.
-
 ## Scope of the Project
 
 This project is a cooking application that includes Real-time monitoring of the readiness of the dish and customizing the recipe according to the spiciness level of the user.
