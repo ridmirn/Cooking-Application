@@ -17,4 +17,6 @@ The purpose of this project is to enable people with taste and smell disabilitie
 3. Firebase as the backend and hosting of the mobile application.
 
 ## UI Designs.
-![Capture10](https://github.com/ridmirn/cooking-app/assets/105937420/d9a95716-6471-41f9-8d5d-455b570a4f43) ![Capture11](https://github.com/ridmirn/cooking-app/assets/105937420/6f3f2505-ebed-4800-961d-a5f37d4d7370)
+
+![image](https://github.com/ridmirn/cooking-app/assets/105937420/059cab70-526b-423f-8247-4af4c915c853) ![image](https://github.com/ridmirn/cooking-app/assets/105937420/c36619d2-9306-4763-8c35-d9443b0f0ba4)
+
